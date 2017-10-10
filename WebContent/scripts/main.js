@@ -1,4 +1,4 @@
-(function() {
+(function() {//function only call itself once.
 
 	/**
 	 * Variables
@@ -102,7 +102,7 @@
 	}
 
 	/**
-	 * A helper function that creates a DOM element <tag options...>
+	 * A helper function that creates a DOM element <tag options...> tag = id.
 	 * 
 	 * @param tag
 	 * @param options
@@ -194,6 +194,7 @@
 		// successful callback
 		function(res) {
 			var items = JSON.parse(res);
+			//console.log(items);
 			if (!items || items.length === 0) {
 				showWarningMessage('No nearby item.');
 			} else {
